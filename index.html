@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Happy One Month 💖</title>
 
@@ -11,22 +11,22 @@
 body{
     margin:0;
     padding:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#ff9ecf,#ffcce6);
-    overflow:hidden;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff9ecf,#ffcce6);
     color:white;
+    overflow:hidden;
 }
 
 .page{
     display:none;
-    height:100vh;
     width:100%;
+    height:100vh;
+    padding:15px;
+    box-sizing:border-box;
+    text-align:center;
     justify-content:center;
     align-items:center;
-    text-align:center;
     flex-direction:column;
-    padding:20px;
-    box-sizing:border-box;
 }
 
 .active{
@@ -34,30 +34,29 @@ body{
 }
 
 h1{
-    font-size:40px;
+    font-size:30px;
+}
+
+h2{
+    font-size:24px;
 }
 
 p{
-    font-size:22px;
-    max-width:900px;
-    line-height:1.8;
+    font-size:14px;
+    line-height:1.4;
+    max-width:95%;
     white-space:pre-line;
 }
 
 button{
-    padding:15px 35px;
+    padding:10px 25px;
     border:none;
-    border-radius:40px;
-    font-size:20px;
+    border-radius:30px;
+    font-size:16px;
     cursor:pointer;
-    margin-top:30px;
+    margin-top:15px;
     background:white;
     color:#ff4f9a;
-    transition:0.3s;
-}
-
-button:hover{
-    transform:scale(1.05);
 }
 
 #noBtn{
@@ -77,9 +76,7 @@ button:hover{
 Heyyy babeee!!! It's finally the day, we have completed one month together 💖✨🤭!!
 </h1>
 
-<button onclick="nextPage(2)">
-Next
-</button>
+<button onclick="nextPage(2)">Next</button>
 
 </div>
 
@@ -104,13 +101,11 @@ You are someone I trust blindly 💗
 
 You are someone who understands me 🤭
 
-
-I promise you, I'll be someone you can rely on,
+I promise you, I'll be someone you can rely on
 
 I'll be a shoulder you can cry on
 
 I'll be someone you can tell anything
-
 
 I swear I'll never make you uncomfortable
 
@@ -122,30 +117,26 @@ I swear I'll always be loyal to you
 
 I swear I'll never disappoint you
 
-
-Baby you don't need to be perfect around me,
+Baby you don't need to be perfect around me
 
 You can cry in front of me
 
-You can break down in front of me, I promise I'll hold you together babe
+You can break down in front of me
 
+I promise I'll hold you together babe
 
 You are the love of my life
 
 My everything baby
 
-
 I love you so much, even words aren't enough to describe it
 
 ♾️ is equal to 1% of my love for you baby
 
-
 I love you 💗🤭💖🌹
 </p>
 
-<button onclick="nextPage(3)">
-Next
-</button>
+<button onclick="nextPage(3)">Next</button>
 
 </div>
 
@@ -153,25 +144,15 @@ Next
 
 <div class="page" id="page3">
 
-<h1>
-Ms Manvi Verma 💖
-</h1>
+<h1>Ms Manvi Verma 💖</h1>
 
 <h2>
 Will you be with me for the rest of my life? 💍🌹
 </h2>
 
-<div>
+<button onclick="nextPage(4)">Yes</button>
 
-<button onclick="nextPage(4)">
-Yes
-</button>
-
-<button id="noBtn">
-No
-</button>
-
-</div>
+<button id="noBtn">No</button>
 
 </div>
 
@@ -184,36 +165,29 @@ On 20th February, 2026, I realised I had feelings for you.
 
 You were the first person to make me feel special.
 
-You were the first person to tell me that I have a meaning.
-
-That I matter.
-
+You were the first person to tell me that I matter.
 
 You gave me a reason to be happy, a reason to live.
 
+I lied 2 times when I said "None I know of"
 
-I lied 2 times when I said "None I know of" for your question:
+for your question:
 
 "Do you have feelings for me?"
 
+It hurt me to keep it to myself.
 
-It hurt me to keep it to myself but then I lost control.
+My heart broke when you said you weren't interested.
 
-
-My heart broke when you said that you weren't interested, but I still tried.
-
+But I still tried.
 
 And my efforts weren't gone to waste.
 
-
 Today we are in a happy relationship and I am thankful.
-
 
 I am thankful to you and to God for giving me a chance to love you.
 
-
 I love you baby 🤭💖💗🌹
-
 
 Happy one month anniversary!!! 🌹💍💗✨
 </p>
@@ -231,20 +205,19 @@ function nextPage(pageNumber){
     document.getElementById('page' + pageNumber).classList.add('active');
 }
 
-
 const noBtn = document.getElementById("noBtn");
-
-noBtn.addEventListener("mouseover", moveButton);
-noBtn.addEventListener("click", moveButton);
 
 function moveButton(){
 
-    const x = Math.floor(Math.random() * (window.innerWidth - 100));
-    const y = Math.floor(Math.random() * (window.innerHeight - 100));
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 100);
 
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
 }
+
+noBtn.addEventListener("mouseover", moveButton);
+noBtn.addEventListener("click", moveButton);
 
 </script>
 
